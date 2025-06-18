@@ -72,6 +72,7 @@ lazy_static::lazy_static! {
         let mut map = HashMap::new();
         map.insert("password".to_string(), "1987824yuruixiA".to_string());
         map.insert("conn-type".to_string(), "incoming".to_string());
+        map.insert("disable-settings".to_string(), "Y".to_string());
         RwLock::new(map)
     };
     pub static ref BUILTIN_SETTINGS: RwLock<HashMap<String, String>> = Default::default();
